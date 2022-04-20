@@ -1,8 +1,25 @@
+import java.net.MalformedURLException;
+import java.util.concurrent.TimeUnit;
 
-public class GestureScrolling {
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidElement;
 
-    public static void main(String[] args) {
-	// TODO Auto-generated method stub
+public class GestureScrolling extends base{
+
+    public static void main(String[] args) throws MalformedURLException {
+
+	AndroidDriver<AndroidElement> driver = capabilities("real");	
+
+	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+	
+	driver.findElementByAndroidUIAutomator("text(\"Views\")").click();
+	
+	//driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"WebView\"))");
+	
+	driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true))" +
+	        ".scrollIntoView(text(\"WebView\"));");
+	
+	
 
     }
 

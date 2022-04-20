@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Lone_Department" class="navigator-link">
+              <span class="suite-name border-failed">Lone Department</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Lone_Department" class="navigator-link ">
+                    <span>C:\Users\Administrator\Desktop\CucumberSeleniumDemo\AppiumMobile\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Lone_Department" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Lone_Department" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Lone_Department" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Lone_Department" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Lone_Department" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Lone_Department" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Lone_Department" class="hide-methods failed suite-Lone_Department"> (hide)</a> <!-- hide-methods failed suite-Lone_Department -->
+                      <a href="#" panel-name="suite-Lone_Department" class="show-methods failed suite-Lone_Department"> (show)</a> <!-- show-methods failed suite-Lone_Department -->
+                    </span>
+                    <div class="method-list-content failed suite-Lone_Department">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Lone_Department" title="com.TestNGFramework.Basic" class="method navigator-link" hash-for-method="TestNG">TestNG</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Lone_Department -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Lone_Department" class="hide-methods passed suite-Lone_Department"> (hide)</a> <!-- hide-methods passed suite-Lone_Department -->
+                      <a href="#" panel-name="suite-Lone_Department" class="show-methods passed suite-Lone_Department"> (show)</a> <!-- show-methods passed suite-Lone_Department -->
+                    </span>
+                    <div class="method-list-content passed suite-Lone_Department">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Lone_Department" title="com.TestNGFramework.Basic" class="method navigator-link" hash-for-method="dataproviderTest(firstsetUsername, password)">dataproviderTest(firstsetUsername, password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Lone_Department" title="com.TestNGFramework.Basic" class="method navigator-link" hash-for-method="dataproviderTest(ThirdsetUsername, 3rdpassword)">dataproviderTest(ThirdsetUsername, 3rdpassword)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Lone_Department" title="com.TestNGFramework.Basic" class="method navigator-link" hash-for-method="dataproviderTest(SecondsetUsername, 2ndpassword)">dataproviderTest(SecondsetUsername, 2ndpassword)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Lone_Department" title="com.TestNGFramework.Basic1" class="method navigator-link" hash-for-method="loneHome">loneHome</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Lone_Department" title="com.TestNGFramework.Basic1" class="method navigator-link" hash-for-method="mobileLogOut">mobileLogOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Lone_Department" title="com.TestNGFramework.Basic1" class="method navigator-link" hash-for-method="mobileLogin">mobileLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Lone_Department" title="com.TestNGFramework.Basic1" class="method navigator-link" hash-for-method="mobilepasss">mobilepasss</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Lone_Department" title="com.TestNGFramework.Basic1" class="method navigator-link" hash-for-method="passsedaway">passsedaway</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Lone_Department -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Lone_Department" class="panel Lone_Department">
+          <div class="suite-Lone_Department-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.TestNGFramework.Basic</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestNG">
+                  </a> <!-- TestNG -->
+                  <span class="method-name">TestNG</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.TestNGFramework.Basic.TestNG(Basic.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Lone_Department-class-failed -->
+          <div class="suite-Lone_Department-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.TestNGFramework.Basic</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dataproviderTest(firstsetUsername, password)">
+                  </a> <!-- dataproviderTest(firstsetUsername, password) -->
+                  <span class="method-name">dataproviderTest</span>
+                  <span class="parameters">(firstsetUsername, password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dataproviderTest(ThirdsetUsername, 3rdpassword)">
+                  </a> <!-- dataproviderTest(ThirdsetUsername, 3rdpassword) -->
+                  <span class="method-name">dataproviderTest</span>
+                  <span class="parameters">(ThirdsetUsername, 3rdpassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dataproviderTest(SecondsetUsername, 2ndpassword)">
+                  </a> <!-- dataproviderTest(SecondsetUsername, 2ndpassword) -->
+                  <span class="method-name">dataproviderTest</span>
+                  <span class="parameters">(SecondsetUsername, 2ndpassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Lone_Department-class-passed -->
+          <div class="suite-Lone_Department-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.TestNGFramework.Basic1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loneHome">
+                  </a> <!-- loneHome -->
+                  <span class="method-name">loneHome</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mobileLogOut">
+                  </a> <!-- mobileLogOut -->
+                  <span class="method-name">mobileLogOut</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mobileLogin">
+                  </a> <!-- mobileLogin -->
+                  <span class="method-name">mobileLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mobilepasss">
+                  </a> <!-- mobilepasss -->
+                  <span class="method-name">mobilepasss</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="passsedaway">
+                  </a> <!-- passsedaway -->
+                  <span class="method-name">passsedaway</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Lone_Department-class-passed -->
+        </div> <!-- panel Lone_Department -->
+        <div panel-name="test-xml-Lone_Department" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Administrator\Desktop\CucumberSeleniumDemo\AppiumMobile\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;Lone Department&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.TestNGFramework.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;personal lone&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.TestNGFramework.Basic1&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- personal lone --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;homelone &quot;&gt;
+    &lt;parameter name=&quot;Api&quot; value=&quot;12345&quot;/&gt;
+    &lt;parameter name=&quot;URL&quot; value=&quot;personalLone.com&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;exclude name=&quot;Smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.TestNGFramework.Basic&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- homelone  --&gt;
+&lt;/suite&gt; &lt;!-- Lone Department --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Lone_Department" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Lone Department</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">personal lone (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">homelone  (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Lone_Department" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Lone Department</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Lone_Department" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Lone Department</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Lone_Department');
+function tableData_Lone_Department() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TestNG')
+data.setCell(0, 2, 'com.TestNGFramework.Basic')
+data.setCell(0, 3, 10);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'mobileLogin')
+data.setCell(1, 2, 'com.TestNGFramework.Basic1')
+data.setCell(1, 3, 9);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'mobilepasss')
+data.setCell(2, 2, 'com.TestNGFramework.Basic1')
+data.setCell(2, 3, 8);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'mobileLogOut')
+data.setCell(3, 2, 'com.TestNGFramework.Basic1')
+data.setCell(3, 3, 1);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loneHome')
+data.setCell(4, 2, 'com.TestNGFramework.Basic1')
+data.setCell(4, 3, 1);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'passsedaway')
+data.setCell(5, 2, 'com.TestNGFramework.Basic1')
+data.setCell(5, 3, 1);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'dataproviderTest')
+data.setCell(6, 2, 'com.TestNGFramework.Basic')
+data.setCell(6, 3, 1);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'dataproviderTest')
+data.setCell(7, 2, 'com.TestNGFramework.Basic')
+data.setCell(7, 3, 1);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'dataproviderTest')
+data.setCell(8, 2, 'com.TestNGFramework.Basic')
+data.setCell(8, 3, 1);
+window.suiteTableData['Lone_Department']= { tableData: data, tableDiv: 'times-div-Lone_Department'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 68 ms</span>
+              <div id="times-div-Lone_Department">
+              </div> <!-- times-div-Lone_Department -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Lone_Department" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Lone Department</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Lone_Department" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.TestNGFramework.Basic</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">hello</span>
+                <br/>
+                <span class="ignored-method-name">helloGirl</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Lone_Department" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.TestNGFramework.Basic1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">mobileLogin</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.TestNGFramework.Basic</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestNG</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.TestNGFramework.Basic1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">mobilepasss</span>
+                <span class="method-start">12 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">passsedaway</span>
+                <span class="method-start">21 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loneHome</span>
+                <span class="method-start">23 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.TestNGFramework.Basic</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">dataproviderTest(firstsetUsername, password)</span>
+                <span class="method-start">23 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">dataproviderTest(SecondsetUsername, 2ndpassword)</span>
+                <span class="method-start">25 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">dataproviderTest(ThirdsetUsername, 3rdpassword)</span>
+                <span class="method-start">28 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.TestNGFramework.Basic1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">mobileLogOut</span>
+                <span class="method-start">29 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -16,7 +16,7 @@ public class GesturesTouchAction extends base{
 
     public static void main(String[] args) throws MalformedURLException {
 	
-	AndroidDriver<AndroidElement> driver = capabilities();	
+	AndroidDriver<AndroidElement> driver = capabilities("real");	
 	
 	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	
